@@ -99,8 +99,8 @@
             <div class="row">
                 <div class="row col-12 border border-dark">
                     <!-- Having trouble creating containers to hold images that link to my repos -->
-                    <a href="https://github.com/mdmilroy/FirstConsoleApp">Dungeon Game Console App</a>
-                    <a href="https://github.com/mdmilroy/staticstorefront">Static Store Front Website</a>
+                    <div class="col-6 hide-overflow"><a class="portlink" href="https://github.com/mdmilroy/FirstConsoleApp"><img class="portlink" src="./assets/dungeonGame.png" alt="Dungeon Game Console App"></a></div>
+                    <div class="col-6"><a href="https://github.com/mdmilroy/staticstorefront">Static Store Front Website</a></div>
                 </div>
             </div>
         </div>
@@ -135,28 +135,28 @@
                 <div class="contact col-10 rounded">
                     <form action="https://formspree.io/mnqzerze" method="POST">
                         <div class="form-group">
-                            <label for="formGroupExampleInput">What's your name?</label>
-                            <input type="text" class="form-control" id="formname" name="name" placeholder="Your Name">
+                            <label for="formname">What's your name?</label>
+                            <input type="text" class="form-control" id="formname" name="formname" placeholder="Your Name">
                         </div>
                         <div class="form-group">
-                            <label for="formGroupExampleInput2">Email</label>
-                            <input type="email" class="form-control" id="formemail" name="email" placeholder="yourname@gmail.com">
+                            <label for="formemail">Email</label>
+                            <input type="email" class="form-control" id="formemail" name="formemail" placeholder="yourname@gmail.com">
                         </div>
                         <div class="form-group">
-                            <label for="formGroupExampleInput2">Phone Number</label>
-                            <input type="tel" class="form-control" id="formphone" name="phone" placeholder="555-555-5555">
+                            <label for="formphone">Phone Number</label>
+                            <input type="tel" class="form-control" id="formphone" name="formphone" placeholder="555-555-5555">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="call" value="Call">
-                                <label class="form-check-label" for="inlineCheckbox1">Call</label>
+                                <input class="form-check-input" type="checkbox" id="call" name="call" value="Call">
+                                <label class="form-check-label" for="call">Call</label>
                               </div>
                               <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="text" value="Text">
-                                <label class="form-check-label" for="inlineCheckbox2">Text</label>
+                                <input class="form-check-input" type="checkbox" id="text" name="text" value="Text">
+                                <label class="form-check-label" for="text">Text</label>
                               </div>
                         </div>
                         <div class="form-group">
-                            <label for="formGroupExampleInput2">Message</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" name="message" placeholder="Let's grab coffee soon!">
+                            <label for="message">Message</label>
+                            <input type="text" class="form-control" id="message" name="message" placeholder="Let's grab coffee next week?">
                         </div>
                         <button type="submit" class="btn btn-primary active" name="submit" value="submit">Send it!</button>                    
                     </form>
