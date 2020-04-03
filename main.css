@@ -1,3 +1,7 @@
+body {
+    background-color: #424242;
+}
+
 .container {
     position: relative;
 }
@@ -6,16 +10,22 @@
     margin: auto;
 }
 
+.jumbotron {
+    background-color: #557A95;
+    border-radius: 0;
+}
+
 .landing {
     font-family: 'Questrial', sans-serif;
 }
 
 h1 {
     font-family: 'Monda', sans-serif;
+    margin-bottom: 3rem;
 }
 
 .floatingSocial {
-    height: 10rem;
+    height: fit-content;
     width: 5rem;
     position: fixed;
     right: 0;
@@ -94,6 +104,7 @@ form {
 }
 
 footer {
-    border: thin black solid;
     height: 5rem;
+    background-color: #557A95;
+    border-radius: 0;
 }
