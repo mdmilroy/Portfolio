@@ -6,45 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Developer to Hire</title>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Do+Hyeon&family=Monda:wght@700&family=Poiret+One&family=Questrial&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div class="jumbotron">
+    <div class="jumbotron" style="margin-bottom: 0;">
         <h1 class="landing display-4">THANKS FOR LANDING!</h1>
         <p class="lead">You must be looking for a software developer with a wide range of experience in Agile
             methodologies and practices. Take a look around,
             contact me, and let's grab coffee! </p>
         <hr class="my-4">
-        <p>I have professional experience as an Agile Coach, Scrum Master, and Dev Team Member in state government.</p>
+        <p>I have professional experience in state government as an Agile Coach, Scrum Master, and Dev Team Member.</p>
         <!-- <a class="btn btn-primary btn-lg" href="#" role="button">What I Can Do</a> -->
     </div>
+    <!-- TODO Add a navbar to jump across page -->
+    <nav class="navbar" style="margin-top: 0;">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <a type="button" class="btn btn-secondary" href="#skills">Skills</a>
+            <a type="button" class="btn btn-secondary" href="#portfolio">Portfolio</a>
+            <a type="button" class="btn btn-secondary" href="#certifications">Certifications</a>
+            <a type="button" class="btn btn-secondary" href="#connect">Connect</a>
+        </div>
+    </nav>
 
     <div class="floatingSocial">
-        <a href="https://www.linkedin.com/in/mdmilroy/" target="_blank"><img class="smimg mx-auto d-block my-auto"
-                src="./assets/iconfinder_linkedin_circle_color_107178.png" alt="Linkedin"></a>
-        <a href="https://github.com/mdmilroy" target="_blank"><img class="smimg mx-auto d-block my-auto"
-                src="./assets/iconfinder_Github_1298743.png" alt="GitHub"></a>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/mdmilroy/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+            <li>
+                <a href="https://github.com/mdmilroy" target="_blank"><i class="fab fa-github icon"></i></a></li>
+        </ul>
     </div>
 
     <div class="container col-10">
-        <div class="container col-12" id="" style="margin-top: 8rem; margin-bottom: 8rem; color: #FAFAFA;">
+        <div class="container col-12" style="margin-top: 8rem; margin-bottom: 8rem; color: #FAFAFA;">
             <h1>WHO I AM</h1>
             <div class="aboutme col-12" style="min-height: 18rem; text-align: justify;">
-                <img class="selfie img-fluid rounded col-4" src="./assets/Headshot Natural Smaller.jpg"
+                <img class="selfie img-fluid rounded col-4" src="./assets/Headshot.jpg"
                     alt="Michael Milroy">
                 <p>
                     Hi, my name is <strong>Michael Milroy</strong>. I was born and raised in Indiana, focused on computers. I carried that interest over to a
@@ -80,32 +94,38 @@
 
     <div style="background-color: #FAFAFA;">
         <div class="container col-10" id="boxB" style="padding-top: 5rem; position: relative;">
-            <h1>SKILLS</h1>
+            <h1 id="skills">SKILLS</h1>
             <div class="row">
                 <div class="row col-11" id="progressbars"  style="margin: auto">
                     <div class="progress col-12">
                         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%"
-                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>Data Analysis
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" id="skilllabels" role="progressbar" style="width: 10%" aria-valuemin="0" aria-valuemax="100">Data Analysis</div>
+                        </div>
+                    <div class="progress col-12">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 33%"
+                            aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" id="skilllabels" role="progressbar" style="width: 10%" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
                     </div>
                     <div class="progress col-12">
                         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 33%"
-                            aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>Python
+                            aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" id="skilllabels" role="progressbar" style="width: 10%" aria-valuemin="0" aria-valuemax="100">C#</div>
                     </div>
                     <div class="progress col-12">
                         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 33%"
-                            aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>C#
+                            aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" id="skilllabels" role="progressbar" style="width: 10%" aria-valuemin="0" aria-valuemax="100">Python</div>
                     </div>
                     <div class="progress col-12">
                         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 33%"
-                            aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>.NET
+                            aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" id="skilllabels" role="progressbar" style="width: 10%" aria-valuemin="0" aria-valuemax="100">.NET</div>
                     </div>
                     <div class="progress col-12">
                         <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 33%"
-                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>SQL
-                    </div>
-                    <div class="progress col-12">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 33%"
-                            aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>HTML/CSS
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar" id="skilllabels" role="progressbar" style="width: 10%" aria-valuemin="0" aria-valuemax="100">SQL</div>
                     </div>
                     <div class="meter col-4" style="width: 30%; height: fit-content;"><span
                             class="meter-text">Beginner</span></div>
@@ -120,11 +140,11 @@
         </div>
 
         <div class="container col-10" id="boxA" style="margin-top: 5rem;">
-            <h1>PORTFOLIO</h1>
+            <h1 id="portfolio">PORTFOLIO</h1>
             <div class="row">
                 <div class="row col-11 border border-dark" style="padding: 0; height: 20rem;">
                     <div class="portlinkbox col-6 hide-overflow border border-dark"><a
-                            href="https://github.com/mdmilroy/FirstConsoleApp"><img class="portlink"
+                            href="https://github.com/mdmilroy/FirstConsoleApp"><img class="portlink img-fluid"
                                 src="./assets/dungeonGame.png" alt="Dungeon Game Console App"></a></div>
                     <div class="portlinkbox col-6 hide-overflow border border-dark"><a
                             href="https://github.com/mdmilroy/staticstorefront"><img class="portlink"
@@ -135,29 +155,29 @@
 
         <div class="container col-10" id="boxB" style="margin-top: 5rem;">
             <div class="row">
-            <h1>CERTIFICATIONS</h1>
+            <h1 id="certifications">CERTIFICATIONS</h1>
                 <div class="certifications row col-12" style="padding: auto;">
                     <div class="col-1"></div>
                     <div class="cert col-2">
                         <a href="https://www.youracclaim.com/badges/5f036206-10d7-4759-a743-4402902c37d6/public_url"
-                            target="_blank"><img class="certimg" src="./assets/SPC_Cert.png" alt="SAFe SPC"></a>
+                            target="_blank"><img class="certimg img-fluid" src="./assets/SPC_Cert.png" alt="SAFe SPC"></a>
                     </div>
                     <div class="cert col-2">
-                        <a href="http://bcert.me/stqhexwox" target="_blank"><img class="certimg"
+                        <a href="http://bcert.me/stqhexwox" target="_blank"><img class="certimg img-fluid"
                                 src="./assets/CSM_Cert.png" alt="Certified Scrum Master"></a>
                     </div>
                     <div class="cert col-2">
                         <a href="https://www.youracclaim.com/badges/18197db5-1e11-4328-a49c-fe7cbca9343e/public_url"
-                            target="_blank"><img class="certimg" src="./assets/CAPM_Cert.png" alt="PMI CAPM"></a>
+                            target="_blank"><img class="certimg img-fluid" src="./assets/CAPM_Cert.png" alt="PMI CAPM"></a>
                     </div>
                     <div class="cert col-2">
                         <a href="https://sixsigma.purdue.edu/six-sigma-certifications/six-sigma-black-belt-training-and-certification-program/"
-                            target="_blank"><img class="certimg" src="./assets/SixSigmaBlackBelt.png"
+                            target="_blank"><img class="certimg img-fluid" src="./assets/SixSigmaBlackBelt.png"
                                 alt="Six Sigma Black Belt"></a>
                     </div>
                     <div class="cert col-2">
                         <a href="https://www.datacamp.com/tracks/data-analyst-with-python" target="_blank"><img
-                                class="certimg" src="./assets/DataAnalyst.png" alt="Data Analyst"></a>
+                                class="certimg img-fluid" src="./assets/DataAnalyst.png" alt="Data Analyst"></a>
                     </div>
                     <div class="col-1"></div>
                 </div>
@@ -165,7 +185,7 @@
         </div>
 
         <div class="container col-10" id="boxA" style="margin-top: 5rem;">
-            <h1>LET'S CONNECT</h1>
+            <h1 id="connect">LET'S CONNECT</h1>
             <div class="row">
                 <div class="contact col-10 rounded" style="margin-bottom: 8rem;">
                     <form action="https://formspree.io/mnqzerze" method="POST">
@@ -197,7 +217,7 @@
                             <input type="text" class="form-control" id="message" name="message"
                                 placeholder="Let's grab coffee next week?">
                         </div>
-                        <button type="submit" class="btn btn-primary active" name="submit" value="submit">Send
+                        <button type="submit" class="btn btn-primary active" id="submit" name="submit" value="submit">Send
                             it!</button>
                     </form>
                 </div>

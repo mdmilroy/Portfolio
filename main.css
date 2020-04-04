@@ -7,12 +7,20 @@ body {
 }
 
 .row {
+    position: relative;
     margin: auto;
 }
 
 .jumbotron {
-    background-color: #557A95;
+    background-color: #0B9DF4;
     border-radius: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
 }
 
 .landing {
@@ -31,22 +39,50 @@ h1 {
     right: 0;
 }
 
-.smimg {
+/* .smimg {
     height: 5vw;
     width: 5vw;
     position: relative;
+} */
+
+.navbar {
+    background-color: #FF7C00;
+    height: fit-content;
+    padding: 0;
 }
+
+.btn {
+    width: 8rem;
+    /* margin-right: 3rem; */
+    background-color: #FF7C00;
+    border: #FF7C00;
+    color: #424242;
+    font-weight: bolder;
+}
+
+.btn-group .btn {
+    border-radius: 0;
+}
+
+#submit {
+    margin: 0;
+    background-color: #FF7C00;
+    border: none;
+}
+
 
 .selfie {
     min-height: 18rem;
     max-height: 18rem;
     min-width: 18rem;
     max-width: 18rem;
-    margin: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
     position: relative;
     float: left;
     left: 0;
 }
+
 
 #progressbars {
     margin-left: .25rem;
@@ -58,6 +94,18 @@ h1 {
     height: 1rem;
     margin-top: .75rem;
     margin-bottom: .75rem;
+}
+
+.progress-bar {
+    background-color: #FF7C00;
+}
+
+
+
+#skilllabels {
+    background-color: transparent;
+    color: #424242;
+    font-weight: bolder;
 }
 
 .meter {
@@ -106,6 +154,73 @@ form {
 
 footer {
     height: 5rem;
-    background-color: #557A95;
+    background-color: #424242;
     border-radius: 0;
 }
+
+/* ---------------------------------- */
+
+ul {
+    display: flex;
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  ul li {
+    list-style: none;
+    margin-right: 1rem;
+  }
+  
+  ul li a {
+    width: 80px;
+    height: 80px;
+    background-color: #FAFAFA;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    /* border-radius: 50%; */
+    position: relative;
+    overflow: hidden;
+    /* border: 3px solid #fff; */
+    z-index: 1;
+  }
+  
+  ul li a .icon {
+    position: relative;
+    color: #FF7C00;
+    transition: .5s;
+    z-index: 3;
+  }
+  
+  ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  ul li a:hover:before {
+    top: 0;
+  }
+  
+  ul li:nth-child(1) a:before{
+    background: #3b5999;
+  }
+  
+  ul li:nth-child(2) a:before{
+    background: #868686;
+  }
