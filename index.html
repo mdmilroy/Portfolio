@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <div class="jumbotron" style="margin-bottom: 0;">
+    <div class="jumbotron" id="top" style="margin-bottom: 0;">
         <h1 class="landing display-4">THANKS FOR LANDING!</h1>
         <p class="lead">You must be looking for a software developer with a wide range of experience in Agile
             methodologies and practices. Take a look around,
@@ -41,6 +41,7 @@
             <a type="button" class="btn btn-secondary" href="#portfolio">Portfolio</a>
             <a type="button" class="btn btn-secondary" href="#certifications">Certifications</a>
             <a type="button" class="btn btn-secondary" href="#connect">Connect</a>
+            <a type="button" class="btn btn-secondary" href="./assets/Michael Milroy Resume.pdf" target="_blank">Resume</a>
         </div>
     </nav>
 
@@ -140,15 +141,19 @@
 
         <div class="container col-10" id="boxA" style="margin-top: 5rem;">
             <h1 id="portfolio">PORTFOLIO</h1>
-            <div class="row">
-                <div class="row col-11" style="padding: 0; height: 20rem;">
-                    <div class="portlinkbox card-img-top col-6 hide-overflow"><a
-                            href="https://github.com/mdmilroy/FirstConsoleApp" target="_blank"><img class="portlink"
-                                src="./assets/dungeonGame.png" alt="Dungeon Game Console App"><div class="overlay"><div class="text">Check it out!</div></div></a></div>
-                    <div class="portlinkbox card-img-top col-6 hide-overflow"><a
-                            href="https://github.com/mdmilroy/staticstorefront" target="_blank"><img class="portlink"
-                                src="./assets/StaticSite.png" alt="First Static Store Front Site"><div class="overlay"><div class="text">Check it out!</div></div></a></div>
-                </div>
+            <div class="row col-12 " style="height: fit-content;">
+                <div class="portlinkbox card-img-top col-3 hide-overflow "><a
+                    href="https://github.com/mdmilroy/FirstConsoleApp" target="_blank"><img class="portlink img-fluid"
+                        src="./assets/dungeonGame.png" alt="Dungeon Game Console App"><div class="overlay"><div class="text">Check it out!</div></div></a></div>
+                <div class="portlinkbox card-img-top col-3 hide-overflow "><a
+                    href="https://github.com/mdmilroy/staticstorefront" target="_blank"><img class="portlink img-fluid"
+                        src="./assets/StaticSite.png" alt="First Static Store Front Site"><div class="overlay"><div class="text">Check it out!</div></div></a></div>
+                <div class="portlinkbox card-img-top col-3 hide-overflow "><a
+                    aria-disabled=""><img class="portlink img-fluid"
+                        src="./assets/BlueBadge.png" alt="Blue Badge"><div class="overlay"><div class="text">To Be Announced.</div></div></a></div>
+                <div class="portlinkbox card-img-top col-3 hide-overflow "><a
+                    aria-disabled=""><img class="portlink img-fluid"
+                        src="./assets/RedBadge.png" alt="Red Badge"><div class="overlay"><div class="text">To Be Announced.</div></div></a></div>
             </div>
         </div>
 
@@ -218,13 +223,18 @@
                         </div>
                         <button type="submit" class="btn btn-primary active" id="submit" name="submit" value="submit">Send
                             it!</button>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
+        <div class="reset col-12">
+            <a type="button" href="#top" class="uptop"><i class="fas fa-chevron-circle-up fa-w-16 fa-4x" style="color: #0B9DF4;"></i></a>
         </div>
     </div>
 
-    <footer></footer>
+    <footer>
+        <p>&copy; 2020 Michael Milroy</p>
+    </footer>
 
 </body>
 
