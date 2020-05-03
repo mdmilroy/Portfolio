@@ -1,3 +1,9 @@
+.jumbotron
+{
+  background-color: #1826b0;
+}
+
+
 .section
 {
   position: relative;
@@ -42,18 +48,18 @@ h1
 nav a
 {
   width: 8rem;
-  /* margin-right: 3rem; */
-  /* background-color: #FF8A00;
+  margin-right: 3rem;
+  background-color: #FF8A00;
   border: #FF8A00;
-  color: #424242; */
+  color: #424242;
   font-weight: bolder;
 }
 
 nav a:hover 
 {
   background-color: #424242;
-  border: #424242;
   color: #FF8A00;
+  border: #424242;
 }
 
 .section .projects
