@@ -1,7 +1,6 @@
 .section
 {
   position: relative;
-  border: thin black solid;
   margin-top: 2rem;
   padding: 1rem;
 }
@@ -65,7 +64,6 @@ nav a:hover
 
 .wrapper
 {
-  border: thin red solid;
   margin: auto;
   justify-content: center;
 }
@@ -73,7 +71,7 @@ nav a:hover
 .carousel
 {
   overflow: hidden;
-  justify-content: center;
+  margin: auto;
 }
 
 .comingSoon
@@ -110,7 +108,9 @@ footer
   margin: auto;
   height: 100%;
   width: 100%;
+  width: 5rem;
   max-width: 10rem;
+  height: 5rem;
   max-height: 10rem;
 }
 
