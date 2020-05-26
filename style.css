@@ -62,6 +62,12 @@ nav a:hover
   border: #424242;
 }
 
+.labels 
+{
+  text-align: right;
+  padding-right: 1rem;
+}
+
 .section .projects
 {
   height: 30rem;
