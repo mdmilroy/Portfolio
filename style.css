@@ -54,6 +54,10 @@ nav a {
   left: 0;
 }
 
+.tbd {
+  background-color: rgba(0, 0, 0, .5);
+}
+
 .card
 {
   width: 50%;
