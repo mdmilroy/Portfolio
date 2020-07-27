@@ -1,4 +1,33 @@
+#navbarNav {
+  display: fixed;
+  margin-top: 2rem;
+}
 
+.navbar li {
+  width: 10rem;
+  background-color: transparent;
+}
+
+.container {
+  border: thin black solid;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 5rem auto;
+}
+
+.selfie
+{
+  min-height: 18rem;
+  max-height: 18rem;
+  min-width: 18rem;
+  max-width: 18rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  float: left;
+  left: 0;
+}
 
 /* ---------------Social Media--------------- */
 .floatingSocial 
