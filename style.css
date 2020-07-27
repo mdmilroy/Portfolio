@@ -1,11 +1,7 @@
-#navbarNav {
-  display: fixed;
-  margin-top: 2rem;
-}
-
-.navbar li {
-  width: 10rem;
-  background-color: transparent;
+.navbar {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .section
@@ -46,6 +42,7 @@
 {
   width: 50%;
   height: 100%;
+  overflow: scroll;
 }
 
   .projects img {
@@ -78,6 +75,12 @@ footer, .reset {
 
 .contact {
   margin: auto;
+}
+
+@media (max-width: 651px) {
+  .card-text {
+    display: none;
+  }
 }
 
 /* ---------------Social Media--------------- */
