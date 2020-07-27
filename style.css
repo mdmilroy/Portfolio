@@ -8,12 +8,21 @@
   background-color: transparent;
 }
 
+.section
+{
+  position: relative;
+  margin-top: 2rem;
+}
+
 .container {
   border: thin black solid;
-  display: flex;
+}
+
+.flex-container {
   align-content: center;
   justify-content: center;
-  margin: 5rem auto;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .selfie
@@ -35,28 +44,40 @@
 
 .card
 {
-  text-align: center;
   width: 50%;
   height: 100%;
 }
 
+  .projects img {
+    width: 100%;
+    height: 100%;
+  }
+
 .certimg 
 {
   margin: auto;
-  height: 100%;
-  width: 100%;
-  width: 5rem;
-  max-width: 10rem;
-  height: 5rem;
-  max-height: 10rem;
+  width: 10rem;
+  max-width: 15rem;
+  height: 10rem;
+  max-height: 15rem;
 }
 
 .card-footer {
   margin: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
-#skills {
-  background-color: transparent !important;
+footer, .reset {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contact {
+  margin: auto;
 }
 
 /* ---------------Social Media--------------- */
