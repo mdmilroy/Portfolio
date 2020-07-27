@@ -29,6 +29,36 @@
   left: 0;
 }
 
+.row {
+  margin-top: 2rem;
+}
+
+.card
+{
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+
+.certimg 
+{
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  width: 5rem;
+  max-width: 10rem;
+  height: 5rem;
+  max-height: 10rem;
+}
+
+.card-footer {
+  margin: 0;
+}
+
+#skills {
+  background-color: transparent !important;
+}
+
 /* ---------------Social Media--------------- */
 .floatingSocial 
 {
