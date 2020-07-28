@@ -4,6 +4,10 @@
   color: white;
 }
 
+.jumbotron p {
+  font-style: italic;
+}
+
 .navbar {
   display: flex;
   align-content: center;
@@ -32,6 +36,7 @@ nav a {
 {
   position: relative;
   margin-top: 5rem;
+  padding: 15px;
 }
 
 .flex-container {
@@ -58,13 +63,20 @@ nav a {
   background-color: rgba(0, 0, 0, .5);
 }
 
+.card-deck, .card-deck .row {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 .card
 {
-  width: 50%;
-  max-width: 50%;
+  width: 40%;
+  max-width: 40%;
   min-width: 300px;
   max-height: 100%;
   margin: 1rem auto;
+  border-color: #1826b0;
 }
 
   .projects img {
@@ -92,6 +104,9 @@ nav a {
   width: 100%;
   height: auto;
   text-align: center;
+  background-color: #1826b0;
+  color: #DE6500;
+  font-weight: bold;
 }
 
 footer, .reset {
